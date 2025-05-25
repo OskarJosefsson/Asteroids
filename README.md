@@ -1,2 +1,2 @@
 # Asteroids
-Asteroid game
+Asteroid game guided by boot.dev :)
