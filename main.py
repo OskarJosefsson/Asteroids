@@ -47,7 +47,15 @@ def main():
         for draw_item in drawable:
             draw_item.draw(screen)
 
+            
+
         for asteroid in asteroids:
+            for shot in shots:
+                shot_hit = asteroid.collission(shot)
+                if shot_hit == True:
+                    asteroid.split()
+                    shot.kill()
+
             boom = asteroid.collission(player)
             if boom == True:
                 print("GAME OVER!")
